@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+:root {
+    --blue: #0000ee;
+}
+
+html {
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+ul {
+    padding-left: 1.5em;
+}
+
+body {
+    color: #373737;
+    font-size: 1.2rem;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+p {
+    text-indent: 1em;
+}
+
+li p {
+    text-indent: 0;
+}
+
+pre {
+    background-color: rgba(241, 241, 241, 0.747);
+    padding: 1em 2em;
+    overflow-x: auto;
+}
+
+figcaption {
+    font-weight: bold;
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.page {
+    max-width: 1000px;
+    padding: 2rem 0;
+    margin: 1rem;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.header__title {
+    font-size: 2rem;
+}
+
+.header__date {
+    font-size: .9rem;
+    color: var(--blue);
+    font-weight: 400;
+    line-height: 8px;
+}
+
+.main__title {
+    margin-top: 5px;
+    font-size: 1.5rem;
+}
+
+.card {
+    margin: 1em 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.card+.card {
+    border-top: 1px solid rgba(0, 0, 0, 0.712);
+    margin-top: 1.5em;
+}
+
+.card__header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card__desc {
+    flex-basis: 800px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.card__figure {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.card__image {
+    max-height: 150px;
+    max-width: 150px;
+}
+
+@media (min-width: 1000px) {
+    .page {
+        margin: 0 auto;
+    }
+}
+
+a {
+    transition: color .3s;
+}
+
+a:hover {
+    color: rgb(88, 188, 255);
+}

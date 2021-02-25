@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <title>PWEB: Linguagens Para o Back-end</title>
+</head>
+
+<body style="font-family: 'Noto Sans KR', sans-serif">
+    <article class='page'>
+        <header class='header'>
+            <h1 class='header__title'>Linguagens Para o Back-end</h1>
+            <h6 class='header__date'>24 de fevereiro de 2021</h6>
+        </header>
+        <main class=='main'>
+            <p class='main__desc'>
+                O back-end é, em contraste com o front-end, a parte da aplicação que não entra diretamente em contato
+                com o
+                usuário;
+                bem, caso ela funcione como o esperado. Essa parte da aplicação atua como um intermediário entre o banco
+                dos
+                dados e a
+                interface de interação com o usuário, e, além de disponibilizar o caminho pelo qual o front-end possa
+                realizar
+                requisições à base de dados, é responsável, normalmente, por aplicar coisas como validações e a lógica
+                de
+                negócios do
+                projeto.
+            </p>
+            <p class='main__desc'>
+                Exploremos quais as ferramentas que o desenvolvimento back-end nos oferece em 2021 e quais as suas
+                características.
+            </p>
+            <p class='main__desc'>
+                Existem diversas tecnologias, que atendem demandas diferentes, para implementação desse aspecto da
+                aplicação. Elas se
+                transformaram muito com o passar do tempo e continuam sensíveis às tendências do momento, assim como o
+                desenvolvimento
+                web como um todo.
+            </p>
+            <h2 class='main__title'>Linguagens</h2>
+            <div class='card'>
+                <header class="card__header">
+                    <figure class='card__figure'>
+                        <img src='https://cdn.iconscout.com/icon/free/png-512/java-43-569305.png' alt='Java'
+                            class='card__image' />
+                        <figcaption>Java</figcaption>
+                    </figure>
+                    <p class='card__desc'>
+                        Java é uma linguagem de propósito geral, orientada a objetos e de programação de processos
+                        concorrentes. Foi
+                        desenvolvida em 1995 pela Sun Microsystems, porém hoje é propriedade da Oracle. Uma das suas
+                        principais características
+                        divulgada na época foi sua natureza WORA (write once, run anywhere); o princípio de que código
+                        compilado em java poderia
+                        ser executado em qualquer máquina, independentemente do sistema operacional. Isso é possível
+                        graças
+                        a sua engine JVM
+                        (Java Virtual Machine), que traduz código Java para linguagem que pode ser interpretada pela
+                        máquina.
+                    </p>
+                </header>
+                <p>Principal framework web: <a href="https://spring.io/" target="_blank">Spring</a></p>
+                <p>
+                    Dificuldade: <Strong>Difícil</Strong>
+                </p>
+                <h4>Pros</h4>
+                <ul>
+                    <li>
+                        <p>Muitas bibliotecas de código livre</p>
+                    </li>
+                    <li>
+                        <p>Gerenciamento de memória robusto</p>
+                    </li>
+                    <li>
+                        <p>Orientada a Objetos</p>
+                    </li>
+                    <li>
+                        <p>Independência de plataforma</p>
+                    </li>
+                    <li>
+                        <p>Segurança</p>
+                    </li>
+                    <li>
+                        <p>Mult-threading</p>
+                    </li>
+                </ul>
+                <h4>Cons</h4>
+                <ul>
+                    <li>
+                        <p>Gerenciamento de memória pesado</p>
+                    </li>
+                    <li>
+                        <p>Mais lento do que linguagens nativamente compiladas</p>
+                    </li>
+                </ul>
+                <h5>Exemplo</h5>
+                <pre>
+public class Main {
+    static void myMethod() {
+        System.out.println("Hello World!");
+    }
+
+    public static void main(String[] args) {
+        myMethod();
+    }
+}</pre>
+            </div>
+            <div class='card'>
+                <header class="card__header">
+                    <figure class='card__figure'>
+                        <img src='https://i.imgur.com/fDIO10S.png' alt='Ruby' class='card__image' />
+                        <figcaption>Ruby</figcaption>
+                    </figure>
+                    <p class='card__desc'>
+                        Ruby é uma linguagem de programação presente na web desde os anos 90. É open source, orientada a
+                        objetos e possui
+                        alocação dinâmica de memória. Sua arquitetura é planejada de forma a se assimilar à linguagem
+                        humana, de maneira que é
+                        intuitivo a alguém que não está familiarizado com a sintaxe compreendê-la. Também é
+                        caracterizada
+                        por possuir uma vasta
+                        biblioteca nativa de classes e métodos.
+                    </p>
+                </header>
+                <p>Principal framework web: <a href="https://rubyonrails.org/" target="_blank">Ruby On Rails</a></p>
+                <p>
+                    Dificuldade: <Strong>Moderada</Strong>
+                </p>
+                <h4>Pros</h4>
+                <ul>
+                    <li>
+                        <p>Comunidade ativa de desenvolvedores.</p>
+                    </li>
+                    <li>
+                        <p>Flexibilidade de alterações no projeto.</p>
+                    </li>
+                    <li>
+                        <p>Orientada a Objetos.</p>
+                    </li>
+                    <li>
+                        <p>Vasta biblioteca de módulos nativos.</p>
+                    </li>
+                </ul>
+                <h4>Cons</h4>
+                <ul>
+                    <li>
+                        <p>Velocidade de execução mais lenta que outras linguagens, e baixamente escalável.
+                            Exemplo</p>
+                    </li>
+                </ul>
+                <h5>Exemplo</h5>
+                <pre>
+print 'Please type name >'
+name = gets.chomp
+puts "Hello #{name}."</pre>
+            </div>
+            <div class='card'>
+                <header class="card__header">
+                    <figure class='card__figure'>
+                        <img src='https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png'
+                            alt='Python' class='card__image' />
+                        <figcaption>Python</figcaption>
+                    </figure>
+                    <p class='card__desc'>
+                        2.3 Python
+                        Python é uma linguagem de código aberto, orientada a objetos e de programação interativa. Ao
+                        contrário das anteriores,
+                        Python é uma linguagem interpretada e, por isso, não precisa ser compilada para ser executada. É
+                        extremamente popular no
+                        meio da análise de dados, dado a sua grande capacidade de processamento, e, ainda assim,
+                        apresenta
+                        uma sintaxe intuitiva
+                        e simples; atualmente é uma das principais linguagens recomendadas a iniciantes da área.
+                    </p>
+                </header>
+                <p>Principal framework web: <a href="https://www.djangoproject.com/" target="_blank">Django</a></p>
+                <p>
+                    Dificuldade: <Strong>Fácil</Strong>
+                </p>
+                <h4>Pros</h4>
+                <ul>
+                    <li>
+                        <p>Características de Programação Orientada a Objetos.</p>
+                    </li>
+                    <li>
+                        <p>Vasta coleção de bibliotecas open-source.</p>
+                    </li>
+                    <li>
+                        <p>Boa legibilidade.</p>
+                    </li>
+                    <li>
+                        <p>Escalabilidade.</p>
+                    </li>
+                </ul>
+                <h4>Cons</h4>
+                <ul>
+                    <li>
+                        <p>Consumo de memória e garbage colector.</p>
+                    </li>
+                    <li>
+                        <p>Fracamente Tipada.</p>
+                    </li>
+                </ul>
+                <h5>Exemplo</h5>
+                <pre>
+def recur_factorial(n):
+if n == 1:
+return n
+else:
+return n*recur_factorial(n-1)</pre>
+            </div>
+        </main>
+    </article>
+</body>
+
+</html>
