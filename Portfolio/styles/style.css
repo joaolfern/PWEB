@@ -86,6 +86,7 @@ h1 {
     z-index: 2;
     transition-duration: .8s;
     padding-left: 5em;
+    min-height: 132px;
     /*Hides on scroll*/
 }
 
@@ -337,7 +338,7 @@ h1 {
 
 .h-menu__close {
     position: absolute;
-    right: 1.5rem;
+    right: 2rem;
     top: 2.8rem;
 }
 
