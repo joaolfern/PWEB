@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meu portfolio de desenvolvimento web 👋💁🖖">
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projectDescription.css">
+    <title>João Fernandes</title>
+</head>
+
+<script src="navbar.js" defer></script>
+<script src="expandProjects.js" defer></script>
+<script src="projectDescription.js" defer></script>
+<script src="h-menu.js" defer></script>
+<script src="https://kit.fontawesome.com/b2c3b471c2.js" crossorigin="anonymous"></script>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="navbar__img">
+                <img class="header-img" src="https://i.imgur.com/jF9t17a.png" alt="Joao Fernandes">
+            </div>
+            <ul class="navbar__list">
+                <li class="navbar__item">
+                    <a href="#" class="navbar__link">Sobre</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#project-section" class="navbar__link">Projetos</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#contact-section" class="navbar__link">Contato</a>
+                </li>
+            </ul>
+            <button class="styled-button navbar__h-menu">
+                <i class="fa fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <nav class="h-menu h-menu--hidden">
+        <ul class="h-menu__list">
+            <li class="h-menu__item">
+                <a href="#" class="navbar__link navbar__link--h-menu">Sobre</a>
+            </li>
+            <li class="h-menu__item">
+                <a href="#project-section" class="navbar__link navbar__link--h-menu">Projetos</a>
+            </li>
+            <li class="h-menu__item">
+                <a href="#contact-section" class="navbar__link navbar__link--h-menu">Contato</a>
+            </li>
+        </ul>
+        <button class="h-menu__close styled-button">
+            <i class="fa fa-times"></i>
+        </button>
+    </nav>
+
+    <main class="page-content">
+        <section class="about-section" id="welcome-section">
+            <h1>Olá, eu sou o João</h1>
+            <p>boas-vindas ao meu portfólio</p>
+        </section>
+
+        <section id="project-section" class="project-section">
+            <div class="project-section__header">
+                <h1 class="project-section__title">Projetos</h1>
+                <p class="project-section__desc">Eis os projetos que construi durante meus estudos em desenvolvimento
+                    web. O código fonte pode ser acessado pelo detalhes do projeto, e sua imagem irá redirecioná-lo para
+                    onde a página está hospedada.</p>
+            </div>
+
+            <div class="projects toggledOff">
+                <div class="project__item">
+                    <div class="image-wrapper">
+                        <a class="a-photo" href="https://tuiter.netlify.app/" target="_blank">
+                            <img class="project__img" src="https://i.imgur.com/HZmH0tY.png">
+                        </a>
+                    </div>
+                    <div class="wrap-center ">
+                        <h3>
+                            Twitter
+                        </h3>
+                        <a class="project__codeBtn" href="https://github.com/joaoaoluiz/auth-post-app" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="description__wrapper">
+                        <div class="description">
+                            <p class="description__desc">Meu primeiro projeto web full-stack, e, até então, o desafio
+                                definitivo das minhas habilidades. React, MongoDB e o s3 da AWS são algumas das
+                                tecnologias utilizadas aqui.</p>
+                            <h6 class="bold description__wip"><span class="orangeText">W.I.P.</span> (29.01.2021)</h6>
+                        </div>
+                        <button class="description__button">
+                            <i class="fas fa-angle-down arrow-down"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project__item">
+                    <div class="image-wrapper">
+                        <a class="a-photo" href="https://joaoaoluiz-pokedex.netlify.app/" target="_blank">
+                            <img class="project__img" src="https://i.imgur.com/8OOcMVR.png">
+                        </a>
+                    </div>
+                    <div class="wrap-center ">
+                        <h3>
+                            Pokedex
+                        </h3>
+                        <a class="project__codeBtn" href="https://github.com/joaoaoluiz/react-pokedex" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="description__wrapper">
+                        <div class="description">
+                            <p class="description__desc">Essa aplicação consome a PokeAPI e disponibiliza os status,
+                                habilidades e ataques de mais de 800 pokémons; tudo isso utilizando as tecnologias mais
+                                modernas do react.js</p>
+                        </div>
+                        <button class="description__button">
+                            <i class="fas fa-angle-down arrow-down"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project__item">
+                    <div class="image-wrapper">
+                        <a href="https://joaoaoluiz-nubankapp.netlify.app/" target="_blank">
+                            <img class="project__img project__img--mobile" src="https://i.imgur.com/oONsTlY.png">
+                        </a>
+                    </div>
+                    <div class="wrap-center ">
+                        <h3>
+                            Nubank HomeScreen
+                        </h3>
+                        <a class="project__codeBtn" href="https://github.com/joaoaoluiz/nubank-HomeScreen"
+                            target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="description__wrapper">
+                        <div class="description">
+                            <p class="description__desc">Uma simples página HTML/CSS, onde eu tentei reproduzir a tela
+                                inicial do aplicativo do Nubank</p>
+                        </div>
+                        <button class="description__button">
+                            <i class="fas fa-angle-down arrow-down"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project__item">
+                    <div class="image-wrapper">
+                        <a class="a-photo" href="https://joaoaoluiz-typing-game.netlify.app/" target="_blank">
+                            <img class="project__img" src="https://i.imgur.com/Xc8DyQr.png">
+                        </a>
+                    </div>
+                    <div class="wrap-center ">
+                        <h3>
+                            Typing Game
+                        </h3>
+                        <a class="project__codeBtn" href="https://github.com/joaoaoluiz/typingGame" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="description__wrapper">
+                        <div class="description">
+                            <p class="description__desc">Descubra quantas palavras você consegue digitar em 15 segundos.
+                            </p>
+                        </div>
+                        <button class="description__button">
+                            <i class="fas fa-angle-down arrow-down"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project__item">
+                    <div class="image-wrapper">
+                        <a class="a-photo" href="https://my-react-app-to-do-list.netlify.app/" target="_blank">
+                            <img class="project__img" src="https://i.imgur.com/NgnY95Q.png">
+                        </a>
+                    </div>
+                    <div class="wrap-center ">
+                        <h3>
+                            To do List
+                        </h3>
+                        <a class="project__codeBtn" href="https://github.com/joaoaoluiz/react-todo-list"
+                            target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="description__wrapper">
+                        <div class="description">
+                            <p class="description__desc">Minha primeira aplicação em React, a clássica lista de tarefas.
+                                Produzida como parte do bootcamp do scrimba.com</p>
+                        </div>
+                        <button class="description__button">
+                            <i class="fas fa-angle-down arrow-down"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project__item">
+                    <div class="image-wrapper">
+                        <a href="https://simplec4lculator.netlify.com/" target="_blank">
+                            <img class="project__img" src="https://i.imgur.com/zZPj9xI.png">
+                        </a>
+                    </div>
+                    <div class="wrap-center ">
+                        <h3>
+                            Simple Calculator
+                        </h3>
+                        <a class="project__codeBtn" href="https://codepen.io/_dusnik/pen/eYNwLYM" target="_blank">
+                            <i class="fab fa-codepen"></i>
+                        </a>
+                    </div>
+                    <div class="description__wrapper">
+                        <div class="description">
+                            <p class="description__desc">Uma dos meus primeiros projetos, essa calculadora construída
+                                com HTML, CSS e JAVASCRIPT lhe permite... bem, calcular</p>
+                        </div>
+                        <button class="description__button">
+                            <i class="fas fa-angle-down arrow-down"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="project__item">
+                    <div class="image-wrapper">
+                        <a href="https://somedocumentation.netlify.com/" target="_blank">
+                            <img class="project__img" src="https://i.imgur.com/Ssxcz2y.png">
+                        </a>
+                    </div>
+                    <div class="wrap-center ">
+                        <h3>
+                            Web Docs Page
+                        </h3>
+                        <a class="project__codeBtn" href="https://codepen.io/_dusnik/pen/RwNJxzN" target="_blank">
+                            <i class="fab fa-codepen"></i>
+                        </a>
+                    </div>
+                    <div class="description__wrapper">
+                        <div class="description">
+                            <p class="description__desc">Uma simples página de decumentação web HTML/CSS, feita como
+                                parte do portfolio do freeCodeCamp.org</p>
+                        </div>
+                        <button class="description__button">
+                            <i class="fas fa-angle-down arrow-down"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project__item">
+                    <div class="image-wrapper">
+                        <a href="https://joaoaoluiz.github.io/portfolio/" target="_blank">
+                            <img class="project__img" src="https://i.imgur.com/PZxo5gJ.png">
+                        </a>
+                    </div>
+                    <div class="wrap-center ">
+                        <h3>
+                            Personal Portfolio
+                        </h3>
+                        <a class="project__codeBtn" href="https://github.com/joaoaoluiz/portfolio/" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="description__wrapper">
+                        <div class="description">
+                            <p class="description__desc">Meu portfólio, onde eu exibo os meus projetos em
+                                desenvolvimento web. Feito com HTML, CSS e uma pitada de JAVASCRIPT</p>
+                        </div>
+                        <button class="description__button">
+                            <i class="fas fa-angle-down arrow-down"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="wrap-center">
+                <button class="project__expandBtn">
+                    mostrar mais
+                </button>
+            </div>
+
+        </section>
+        <footer id="contact-section">
+            <h2>
+                Você pode me encontrar aqui:
+            </h2>
+            <div class="contact-icons">
+                <a class="contact-icons__item" href="https://www.linkedin.com/in/jo%C3%A3o-l-fernandes-092244180/"
+                    target="_blank">
+                    <i class="fab fa-linkedin fa-3x"></i>
+                </a>
+                <a class="contact-icons__item" href="https://api.whatsapp.com/send?phone=5515998628610&text=Ol%C3%A1!"
+                    target="_blank">
+                    <i class="fab fa-whatsapp-square fa-3x"></i>
+                </a>
+                <a class="contact-icons__item" href="https://twitter.com/joaoaoluiz" target="_blank">
+                    <i class="fab fa-twitter fa-3x"></i>
+                </a>
+                <a class="contact-icons__item" href="mailto:joao.fernandes22@fatec.sp.gov.br" target="_blank">
+                    <i class="fas fa-envelope fa-3x"></i>
+                </a>
+                <a class="contact-icons__item" id="profile-link" href="https://github.com/joaoaoluiz" target="_blank">
+                    <i class="fab fa-github github-contact fa-3x"></i>
+                </a>
+            </div>
+        </footer>
+    </main>
+</body>
+
+</html>
