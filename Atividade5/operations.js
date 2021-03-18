@@ -9,7 +9,8 @@ const operations = {
     '+': (v1, v2) => v1 + v2,
     '-': (v1, v2) => v1 - v2,
     '/': (v1, v2) => v1 / v2,
-    '*': (v1, v2) => v1 * v2
+    '*': (v1, v2) => v1 * v2,
+    '%': (v1, v2) => v1 % v2
 };
 
 buttons.map(button => button.addEventListener('click', (e) => {
