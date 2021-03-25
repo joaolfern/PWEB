@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JokenPo</title>
+</head>
+<script src='./main.js' defer></script>
+<body>
+    <header class='header'>
+        <h1>JokenPo</h1>
+        <button class='play'>Jogar</button>
+    </header>
+    <div class='game-board'>
+        <div class='buttons'>
+            <button class='game-button' value='0'>Pedra</button>
+            <button class='game-button' value='1'>Papel</button>
+            <button class='game-button' value='2'>Tesoura</button>
+        </div>
+    </div>
+    <div class='results'>
+        <div class='move-wrapper'>
+            <p>Player: <span class='player-move'></span></p>
+            <p>PC: <span class='pc-move'></span></p>
+        </div>
+        <p class='result'> .</p>
+    </div>
+</body>
+</html>
