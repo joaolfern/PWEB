@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    html {
+      height: 100%;
+      overflow-x: hidden;
+    }
+
+    body {
+      height: 100%;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    label {
+      display: block;
+    }
+  </style>
+  <script src='./main.js' defer></script>
+</head>
+
+<body>
+  <form action="comment" method="POST" name="commentForm" id="commentForm">
+    <h1 class='title'>Atividade 12</h1>
+    <div class='d-flex flex-column align-items-end'>
+      <div class='form-group'>
+        <label for='nome'>Nome</label>
+        <input type='text' name='nome' id='nome' />
+      </div>
+      <div class='form-group'>
+        <label for='email'>Email</label>
+        <input type='text' name='email' id='email' />
+      </div>
+      <div class='form-group'>
+        <label for='comentario'>Comentário</label>
+        <textarea name="comentario" rows="3" id="comentario" value="" style="width: 179px; min-height: 2em;"></textarea>
+      </div>
+    </div>
+
+    <fieldset id="pesquisa">
+      <h5>Pesquisa</h5>
+      <h6>Primeira vez nesta página?</h6>
+      <div>
+        <input type="radio" value="sim" name="pesquisa" id='sim' checked>
+        <span>Sim</span>
+      </div>
+      <div>
+        <input type="radio" value="nao" name="pesquisa">
+        <span>Não</span>
+      </div>
+    </fieldset>
+    <div>
+      <input class='btn btn-secondary' name="Reset" type="reset" form="commentForm" value="Redefinir"></input>
+      <input class='btn btn-primary' name="Submit" type="submit" form="commentForm" value="Submit"></input>
+    </div>
+  </form>
+</body>
+
+</html>
