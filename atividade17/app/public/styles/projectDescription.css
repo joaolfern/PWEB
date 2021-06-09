@@ -1,0 +1,49 @@
+.description__wrapper {
+    position: relative;
+    margin-bottom: 1em;
+}
+
+.description {
+    overflow-y: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: all .5s, max-height .4s ease-out;
+}
+
+.description--preview {
+    max-height: .8em;
+    opacity: 1;
+    box-shadow: 0 10px 8px -8px whitesmoke;
+}
+
+.description--shown {
+    max-height: 300px;
+    opacity: 1;
+    box-shadow: none;
+    transition: all .5s, max-height 1s ease-in-out;
+}
+
+.description__button {
+    position: absolute;
+    bottom: -1em;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    background: transparent;
+    color: var(--secondary-color);
+    font-size: 2rem;
+    cursor: pointer;
+    padding-top: 1em;
+}
+
+.fa-angle-down {
+    transition: transform .8s ease-in-out;
+}
+
+.arrow-down {
+    transform: rotate(0deg);
+}
+
+.arrow-up {
+    transform: rotate(180deg);
+}
